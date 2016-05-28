@@ -256,10 +256,10 @@
   
   <repositories>
       <repository>
-          <id>mulesoft-releases</id>
-          <name>MuleSoft Releases Repository</name>
-          <url>https://repository-master.mulesoft.org/nexus/content/groups/public/</url>
-          <layout>default</layout>
+         <id>Codehaus repository</id>
+         <name>codehaus-mule-repo</name>
+         <url>https://repository-master.mulesoft.org/nexus/content/groups/public/</url>
+         <layout>default</layout>
       </repository>
   </repositories>
 
