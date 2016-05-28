@@ -78,9 +78,9 @@
 			<fileset dir="../modules/activiti-simple-workflow/target">
 				<include name="activiti-simple-workflow-*.jar" />
 			</fileset>
-			<fileset dir="../modules/activiti-ldap/target">
+			<!--fileset dir="../modules/activiti-ldap/target">
 				<include name="activiti-ldap*.jar" />
-			</fileset>
+			</fileset-->
 			<fileset dir="../modules/activiti-explorer/target">
 				<include name="activiti-explorer-*.jar" />
 			</fileset>
@@ -99,21 +99,21 @@
 			<fileset dir="../modules/activiti-camel/target">
 				<include name="activiti-camel-*.jar" />
 			</fileset>
-			<fileset dir="../modules/activiti-cdi/target">
+			<!--fileset dir="../modules/activiti-cdi/target">
 				<include name="activiti-cdi*.jar" />
-			</fileset>
+			</fileset-->
 			<fileset dir="../modules/activiti-cxf/target">
 				<include name="activiti-cxf-*.jar" />
 			</fileset>
-			<fileset dir="../modules/activiti-mule/target">
+			<!--fileset dir="../modules/activiti-mule/target">
 				<include name="activiti-mule-*.jar" />
-			</fileset>
+			</fileset-->
 			<fileset dir="../modules/activiti-osgi/target">
 				<include name="activiti-osgi-*.jar" />
 			</fileset>
-			<fileset dir="../modules/activiti-jmx/target">
+			<!--fileset dir="../modules/activiti-jmx/target">
 				<include name="activiti-jmx-*.jar" />
-			</fileset>
+			</fileset-->
 			<fileset dir="../modules/activiti-crystalball/target">
 				<include name="activiti-crystalball-*.jar" />
 			</fileset>
