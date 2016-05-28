@@ -183,7 +183,7 @@
 
   <build>
     <plugins>      
-      <plugin>
+      <!-- plugin>
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
           <excludes>
@@ -200,7 +200,7 @@
             <manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>
           </archive>
         </configuration>
-      </plugin>
+      </plugin -->
       <plugin>
         <groupId>org.apache.felix</groupId>
         <artifactId>maven-bundle-plugin</artifactId>
@@ -502,19 +502,19 @@
               </execution>
             </executions>
           </plugin>
-          <plugin>
+          <!-- plugin>
             <artifactId>maven-surefire-plugin</artifactId>
             <configuration>
               <excludes>
                 <exclude>**/*TestCase.java</exclude>
                 
-                <!-- Disabling tests that run exclusively using standalone config -->
+               
                 <exclude>**/ProcessDiagramRetrievalTest.java</exclude>
                 <exclude>org/activiti/standalone/**</exclude>
               </excludes>
               <runOrder>alphabetical</runOrder>
             </configuration>
-          </plugin>
+          </plugin -->
         </plugins>
       </build>
       <dependencies>
@@ -567,19 +567,19 @@
 						</execution>
 					</executions>
 				</plugin>
-				<plugin>
+				<!--plugin>
 					<artifactId>maven-surefire-plugin</artifactId>
 					<configuration>
 						<excludes>
 							<exclude>**/*TestCase.java</exclude>
 
-							<!-- Disabling tests that run exclusively using standalone config -->
+							
 							<exclude>**/ProcessDiagramRetrievalTest.java</exclude>
 							<exclude>org/activiti/standalone/**</exclude>
 						</excludes>
 						<runOrder>alphabetical</runOrder>
 					</configuration>
-				</plugin>
+				</plugin-->
 			</plugins>
 		</build>
 		<dependencies>
@@ -616,21 +616,21 @@
               </execution>
             </executions>
           </plugin>
-          <plugin>
+          <!-- plugin>
             <artifactId>maven-surefire-plugin</artifactId>
             <configuration>
               <excludes>
                 <exclude>**/*TestCase.java</exclude>
-                <exclude>**/CompetingJobAcquisitionTest.java</exclude> <!-- https://activiti.atlassian.net/browse/ACT-234 -->
-                <exclude>**/WSDLImporterTest.java</exclude> <!-- https://activiti.atlassian.net/browse/ACT-315 -->
-                <exclude>**/JobExecutorTest.java</exclude> <!-- https://activiti.atlassian.net/browse/ACT-427 -->
-                <exclude>**/HistoricTaskInstanceUpdateTest.java</exclude> <!-- https://activiti.atlassian.net/browse/ACT-485  -->
+                <exclude>**/CompetingJobAcquisitionTest.java</exclude>
+                <exclude>**/WSDLImporterTest.java</exclude> 
+                <exclude>**/JobExecutorTest.java</exclude> 
+                <exclude>**/HistoricTaskInstanceUpdateTest.java</exclude> 
                 <exclude>**/RepeatingServiceTaskTest.java</exclude>
                 <exclude>org/activiti/standalone/**</exclude>
               </excludes>
               <runOrder>alphabetical</runOrder>
             </configuration>
-          </plugin>
+          </plugin -->
         </plugins>
       </build>
     </profile>
@@ -706,21 +706,21 @@
               </execution>
             </executions>
           </plugin>
-          <plugin>
+          <!-- plugin>
             <artifactId>maven-surefire-plugin</artifactId>
             <configuration>
               <excludes>
                 <exclude>**/*TestCase.java</exclude>
-                <exclude>**/CompetingJobAcquisitionTest.java</exclude> <!-- https://activiti.atlassian.net/browse/ACT-234 -->
-                <exclude>**/WSDLImporterTest.java</exclude> <!-- https://activiti.atlassian.net/browse/ACT-315 -->
-                <exclude>**/JobExecutorTest.java</exclude> <!-- https://activiti.atlassian.net/browse/ACT-427 -->
-                <exclude>**/HistoricTaskInstanceUpdateTest.java</exclude> <!-- https://activiti.atlassian.net/browse/ACT-485  -->
+                <exclude>**/CompetingJobAcquisitionTest.java</exclude> 
+                <exclude>**/WSDLImporterTest.java</exclude> 
+                <exclude>**/JobExecutorTest.java</exclude> 
+                <exclude>**/HistoricTaskInstanceUpdateTest.java</exclude> 
                 <exclude>**/RepeatingServiceTaskTest.java</exclude>
                 <exclude>org/activiti/standalone/**</exclude>
               </excludes>
               <runOrder>alphabetical</runOrder>
             </configuration>
-          </plugin>
+          </plugin -->
         </plugins>
       </build>
     </profile>
@@ -749,15 +749,15 @@
               </execution>
             </executions>
           </plugin>
-          <plugin>
+          <!-- plugin>
             <artifactId>maven-surefire-plugin</artifactId>
             <configuration>
               <excludes>
                 <exclude>**/*TestCase.java</exclude>
-                <exclude>**/CompetingJobAcquisitionTest.java</exclude> <!-- https://activiti.atlassian.net/browse/ACT-234 -->
-                <exclude>**/WSDLImporterTest.java</exclude> <!-- https://activiti.atlassian.net/browse/ACT-315 -->
-                <exclude>**/JobExecutorTest.java</exclude> <!-- https://activiti.atlassian.net/browse/ACT-427 -->
-                <exclude>**/HistoricTaskInstanceUpdateTest.java</exclude> <!-- https://activiti.atlassian.net/browse/ACT-485  -->
+                <exclude>**/CompetingJobAcquisitionTest.java</exclude>
+                <exclude>**/WSDLImporterTest.java</exclude> 
+                <exclude>**/JobExecutorTest.java</exclude> 
+                <exclude>**/HistoricTaskInstanceUpdateTest.java</exclude> 
                 <exclude>**/Historic*InstanceTest.java</exclude>
                 <exclude>**/HistoryServiceTest.java</exclude>
                 <exclude>**/RepeatingServiceTaskTest.java</exclude>
@@ -770,7 +770,7 @@
               </excludes>
               <runOrder>alphabetical</runOrder>
             </configuration>
-          </plugin>
+          </plugin -->
         </plugins>
       </build>
     </profile>
@@ -784,7 +784,7 @@
       </activation>
       <build>
         <plugins>
-          <plugin>
+          <!--  plugin>
             <artifactId>maven-surefire-plugin</artifactId>
             <configuration>
               <includes>
@@ -793,7 +793,7 @@
               <excludes />
               <runOrder>alphabetical</runOrder>
             </configuration>
-          </plugin>
+          </plugin -->
           <plugin>
             <artifactId>maven-antrun-plugin</artifactId>
             <version>1.4</version>
