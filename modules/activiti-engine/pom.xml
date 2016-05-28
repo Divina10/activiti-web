@@ -5,6 +5,7 @@
 
   <name>Activiti - Engine</name>
   <artifactId>activiti-engine</artifactId>
+  <version>5.21.0-SNAPSHOT</version>
 
   <parent>
     <groupId>org.activiti</groupId>
